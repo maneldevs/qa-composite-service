@@ -1,0 +1,13 @@
+server.port: 8083
+
+microservices:
+    user-service-port: 8080
+    user-service-host: "http://localhost"
+    qa-service-port: 8081
+    qa-service-host: "http://localhost"
+    game-service-port: 8082
+    game-service-host: "http://localhost"
+
+springdoc:
+    swagger-ui.path: /openapi/swagger-ui.html
+    api-docs.path: /openapi/v3/api-docs

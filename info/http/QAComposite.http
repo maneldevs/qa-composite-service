@@ -1,0 +1,4 @@
+@urlBase = http://localhost:8083
+
+###
+GET {{urlBase}}/qa-composite/questions/281a6c13-56b5-4c12-84ce-f12bfa3e1bc3

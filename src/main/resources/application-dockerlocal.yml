@@ -1,0 +1,9 @@
+server.port: 8083
+
+microservices:
+    user-service-port: 8080
+    user-service-host: "http://qa-user-service-local"
+    qa-service-port: 8081
+    qa-service-host: "http://qa-qa-service-local"
+    game-service-port: 8082
+    game-service-host: "http://qa-game-service-local"

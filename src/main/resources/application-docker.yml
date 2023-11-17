@@ -1,0 +1,10 @@
+server:
+    port: 8080
+
+microservices:
+    user-service-port: 8080
+    user-service-host: "http://user-service"
+    qa-service-port: 8080
+    qa-service-host: "http://qa-service"
+    game-service-port: 8080
+    game-service-host: "http://game-service"

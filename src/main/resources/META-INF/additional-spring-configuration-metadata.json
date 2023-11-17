@@ -1,0 +1,32 @@
+{"properties": [
+  {
+    "name": "microservices.user-service-port",
+    "type": "java.lang.Integer",
+    "description": "User microservice port'"
+  },
+  {
+    "name": "microservices.user-service-host",
+    "type": "java.lang.String",
+    "description": "User microservice host url. Example: http://localhost"
+  },
+  {
+    "name": "microservices.qa-service-port",
+    "type": "java.lang.Integer",
+    "description": "QA microservice port"
+  },
+  {
+    "name": "microservices.qa-service-host",
+    "type": "java.lang.String",
+    "description": "QA microservice host url. Example: http://localhost"
+  },
+  {
+    "name": "microservices.game-service-port",
+    "type": "java.lang.Integer",
+    "description": "Game microservice port"
+  },
+  {
+    "name": "microservices.game-service-host",
+    "type": "java.lang.String",
+    "description": "Game microservice host url. Example: http://localhost"
+  }
+]}
