@@ -8,4 +8,6 @@ import es.maneldevs.qa.qacompositeservice.application.model.filter.ScoreFilter;
 public interface GamePort {
     List<ScoreDto> getQuestionsScore(ScoreFilter filter);
     List<ScoreDto> getAnswersScore(ScoreFilter filter);
+    void deleteQuestionScore(String code);
+    void deleteAnswersScore(List<String> targetCodes);
 }

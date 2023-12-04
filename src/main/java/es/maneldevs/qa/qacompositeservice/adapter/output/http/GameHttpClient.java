@@ -54,5 +54,28 @@ public class GameHttpClient implements GamePort {
         return scoresDto;
     }
 
+    @Override
+    public void deleteQuestionScore(String code) {
+        String url = props.getGameServiceUrlBase() + "/questions/" + code;
+        try {
+            restTemplate.delete(url);
+        } catch (Exception e) {
+            log.warn("Error calling {}", url);
+            throw e;
+        }
+    }
+
+    @Override
+    public void deleteAnswersScore(List<String> targetCodes) {
+        String targetCodesParam = String.join(",", targetCodes);
+        String url = props.getGameServiceUrlBase() + "/scores/answers?targetCodes=" + targetCodesParam;
+        try {
+            restTemplate.delete(url);
+        } catch (Exception e) {
+            log.warn("Error calling {}", url);
+            throw e;
+        }
+    }
+
 
 }
